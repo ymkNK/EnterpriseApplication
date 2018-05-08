@@ -1,0 +1,26 @@
+Supplier
+id: uuid 主键
+cop_name: string
+phone:string
+
+
+PurchaseRecord
+material_id:外键
+supplier_id：外键
+amount：int
+overall_cost：double
+
+Missing material record
+id：主键
+missing_material_id：外键
+num_lacked：int
+in_purchasing：bool
+
+Order_list
+id：主键
+status：string
+order_num：string
+order_time：datetime
+due_time：datetime
+Buyer_company:string
+buyer_telephone:string
